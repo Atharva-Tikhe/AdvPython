@@ -1,5 +1,5 @@
 
-# Assignment: Multipath inheritance
+# Assignment: Multipath inheritance example of hybrid inheritence
 
 # Student class 
 #     Sports var/50 
