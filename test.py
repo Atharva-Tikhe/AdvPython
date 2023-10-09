@@ -10,9 +10,9 @@
 
 
 class Student:
-    def set_data(self, org, code):
+    def set_data(self, org, student_code):
         self.org = org 
-        self.code = code
+        self.code = student_code
     
 class Sports(Student):
     def set_name(self, sport, marks):
