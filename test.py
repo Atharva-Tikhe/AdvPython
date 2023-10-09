@@ -1,5 +1,6 @@
 
-# Assignment: Multipath inheritance
+# Assignment- Multipath inheritance
+
 
 # Student class 
 #     Sports var/50 
