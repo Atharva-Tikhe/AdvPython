@@ -43,7 +43,7 @@ while True:
     print("\nMain Menu")
     print("1. Calculate Area")
     print("2. Calculate Perimeter")
-    print("3. Do you want to continue?")
+    print("3. Continue?")
     choice1 = int(input("Enter the Choice: "))
 
     if choice1 == 1:
