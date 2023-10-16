@@ -26,7 +26,7 @@ class Circle(Shape):
 class Square(Shape):
     def __init__(self, side):
         self.side = side
-        print("Side of the square: ", 4)
+        print("Side of the square: ", 8)
 
 
     def area(self):
