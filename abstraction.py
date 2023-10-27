@@ -2,6 +2,10 @@ from abc import ABC, abstractmethod
 
 class Shape(ABC):
     @abstractmethod
+    def name(self):
+        pass
+
+    @abstractmethod
     def area(self):
         pass
     @abstractmethod
