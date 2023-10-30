@@ -12,9 +12,13 @@
     <div class="container">
     <form action="/login_process" method="post">
         <label for="username">Enter Username</label>
+        
         <input name="username" type="text" placeholder="Username">
+        <h4 style="color: red">{{error}}</h4>
         <label for="password">Enter Password</label>
+        
         <input name="password" placeholder="Password" type="password" >
+        <h4 style="color: red;">{{pw_error}}</h4>
         <button type="submit">Submit</button>
     </form>
     </div>
@@ -27,7 +31,7 @@
         margin: 5em 5em;
         padding: 5em 5em;
     }
-    
+
     form > input{
         height: 1cm;
         margin: 1.2cm;

@@ -18,11 +18,19 @@ def hello():
 
 @app.route('/login')
 def serve_login():
-    return render_template("login.html")
+    return render_template("login.html", error='', pw_error='')
  
 @app.route('/login_process', methods = ["POST"])
 def get_form_data():
-    return jsonify({"username": request.form.get("username"), "password": request.form.get("password")})
+    username = request.form.get("username")
+    passwd = request.form.get("password")
+    if username in members.keys():
+        if members[username] == passwd:
+            return f'Welcome {username}'
+        else:
+            return render_template("login.html", pw_error = "Incorrect password")
+    else:
+        return render_template("login.html", error = "Incorrect username")
 
 
     
